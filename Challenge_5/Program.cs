@@ -14,6 +14,7 @@ namespace Challenge_5
             Console.Write("Input a number: ");
             int num = Convert.ToInt32(Console.ReadLine());
 
+            // The numbers from 1 to the users number are checked and the correct words are displayed
             for (int i = 1; i < num + 1; i++)
             {
                 if(((i % 3) == 0) && ((i % 5) == 0))
