@@ -14,17 +14,17 @@ namespace Challenge_5
             Console.Write("Input a number: ");
             int num = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i < num + 1; i++)
             {
-                if ( ( (i % 3)==0 ) && ( (i % 5) == 0 ) )
+                if(((i % 3) == 0) && ((i % 5) == 0))
                 {
                     Console.WriteLine("FizzBuzz");
                 }
-                if ((i % 3) == 0)
+                else if ((i % 3) == 0)
                 {
                     Console.WriteLine("Fizz");
                 }
-                if ((i % 3) == 0)
+                else if ((i % 3) == 0)
                 {
                     Console.WriteLine("Buzz");
                 }
