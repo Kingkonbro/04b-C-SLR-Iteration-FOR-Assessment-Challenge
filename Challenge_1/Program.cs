@@ -15,8 +15,10 @@ namespace Challenge_1
             for (int i = 10; i > 0; i-- )
             {
                 Console.WriteLine(i);
+                // 1 second cool down between numbers
                 Thread.Sleep(1000);
             }
+            // The final message of 'lift-off!' is displayed
             Console.WriteLine("Lift-off!");
         }   
     }
