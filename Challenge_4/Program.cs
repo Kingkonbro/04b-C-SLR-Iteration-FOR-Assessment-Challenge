@@ -16,13 +16,19 @@ namespace Challenge_4
 
             int factorialResult = num ;
 
-            for (int i = num; i > 0; i--)
+            Console.WriteLine("Calculating factorial...");
+            Console.Write(num);
+
+            for (int i = num-1 ; i > 0; i--)
             {
-                Console.WriteLine(i);
+                Console.Write($" * {i}");
                 //Console.WriteLine(factorialResult);
-                factorialResult = factorialResult * i ;
+                factorialResult *= i ;
             }
-            Console.WriteLine(factorialResult);
+
+            // The result if printed to the user
+            Console.WriteLine();
+            Console.WriteLine($"The factorial {num} is {factorialResult}");
         }
     }
 }
